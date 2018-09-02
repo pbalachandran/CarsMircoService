@@ -45,6 +45,7 @@ public class CarTrimsService {
                                 .map(trim -> TrimResponse
                                         .builder()
                                         .trimName(trim.getName())
+                                        .carName(carTrim.getName())
                                         .build())
                                 .collect(Collectors.toList()))
                         .build())

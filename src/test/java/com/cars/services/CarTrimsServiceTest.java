@@ -81,11 +81,13 @@ public class CarTrimsServiceTest {
         TrimResponse trimResponse1 = TrimResponse
                 .builder()
                 .trimName("EX")
+                .carName("Civic")
                 .build();
 
         TrimResponse trimResponse2 = TrimResponse
                 .builder()
                 .trimName("LX")
+                .carName("Civic")
                 .build();
 
         trimResponses.add(trimResponse1);
