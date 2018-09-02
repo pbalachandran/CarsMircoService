@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="cars_db@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>10.4</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="cars_db">
+      <ObjectId>16422</ObjectId>
+      <Owner>pbalachandran</Owner>
+      <IntrospectionStateNumber>115</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12558</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>pbalachandran</Owner>
+    </database>
+    <role id="4" parent="1" name="admin">
+      <ObjectId>16393</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="cars_user">
+      <ObjectId>16424</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pbalachandran">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="7" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="12" parent="2" name="cars">
+      <ObjectId>16425</ObjectId>
+      <Owner>cars_user</Owner>
+      <IntrospectionTimestamp>2018-09-02.13:57:27.720</IntrospectionTimestamp>
+      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>12267</ObjectId>
+      <Owner>pbalachandran</Owner>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>pbalachandran</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+      <Owner>pbalachandran</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>pbalachandran</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+      <Owner>pbalachandran</Owner>
+    </schema>
+    <schema id="18" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>pbalachandran</Owner>
+      <Current>1</Current>
+    </schema>
+    <access-method id="19" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <table id="25" parent="12" name="car">
+      <ObjectId>16501</ObjectId>
+      <Owner>cars_user</Owner>
+      <StateNumber>758</StateNumber>
+    </table>
+    <table id="26" parent="12" name="manufacturer">
+      <ObjectId>16426</ObjectId>
+      <Owner>cars_user</Owner>
+      <StateNumber>757</StateNumber>
+    </table>
+    <table id="27" parent="12" name="trim">
+      <ObjectId>16515</ObjectId>
+      <Owner>cars_user</Owner>
+      <StateNumber>758</StateNumber>
+    </table>
+    <column id="28" parent="25" name="name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>729</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="29" parent="25" name="manufacturername">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>729</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="30" parent="25" name="numberofcylinders">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>733</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="31" parent="25" name="manufacturer">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>755</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="32" parent="25" name="car_name_uindex">
+      <ObjectId>16514</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="33" parent="25" name="car_pkey">
+      <ObjectId>16507</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="25" name="car_pkey">
+      <ObjectId>16508</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>car_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="35" parent="25" name="car_manufacturer_name_fk">
+      <ObjectId>16509</ObjectId>
+      <ColNames>manufacturername</ColNames>
+      <RefTableId>16426</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>manufacturer</RefTableName>
+      <RefKeyName>manufacturer_pkey</RefKeyName>
+      <RefColNames>name</RefColNames>
+    </foreign-key>
+    <foreign-key id="36" parent="25" name="fkrjuahgm7x6bj0d9fy2gbr1b5c">
+      <ObjectId>16529</ObjectId>
+      <ColNames>manufacturername</ColNames>
+      <RefTableId>16426</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>manufacturer</RefTableName>
+      <RefKeyName>manufacturer_pkey</RefKeyName>
+      <RefColNames>name</RefColNames>
+    </foreign-key>
+    <column id="37" parent="26" name="name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>625</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="38" parent="26" name="countryoforigin">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>627</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="39" parent="26" name="manufacturer_name_uindex">
+      <ObjectId>16431</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="40" parent="26" name="manufacturer_pkey">
+      <ObjectId>16429</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="26" name="manufacturer_pkey">
+      <ObjectId>16430</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>manufacturer_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="27" name="name">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>731</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="27" name="carname">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>731</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="44" parent="27" name="car">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>756</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="45" parent="27" name="trim_name_uindex">
+      <ObjectId>16528</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="46" parent="27" name="trim_pkey">
+      <ObjectId>16521</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="27" name="trim_pkey">
+      <ObjectId>16522</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>trim_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="27" name="fkp3prgesdt52dk7t3itbatdrrx">
+      <ObjectId>16534</ObjectId>
+      <ColNames>carname</ColNames>
+      <RefTableId>16501</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>car</RefTableName>
+      <RefKeyName>car_pkey</RefKeyName>
+      <RefColNames>name</RefColNames>
+    </foreign-key>
+    <foreign-key id="49" parent="27" name="trim_car_name_fk">
+      <ObjectId>16523</ObjectId>
+      <ColNames>carname</ColNames>
+      <RefTableId>16501</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>car</RefTableName>
+      <RefKeyName>car_pkey</RefKeyName>
+      <RefColNames>name</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

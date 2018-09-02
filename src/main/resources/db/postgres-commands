@@ -1,0 +1,10 @@
+command-line> createdb cars_db
+command-line> psql postgres
+
+psql> \connect cars_db
+psql> CREATE SCHEMA cars;
+psql> create user cars_user with password 'cars_password';
+psql> grant all privileges on database cars_db to cars_user;
+
+
+https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
