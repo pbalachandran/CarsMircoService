@@ -1,0 +1,199 @@
+{
+	"info": {
+		"name": "CarsMicroService",
+		"_postman_id": "b0703f47-25b5-a306-5b05-063b55052b8e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/autos/manufacturers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Integra\",\n\t\"numberOfCylinders\" : 4,\n\t\"manufacturerName\": \"Acura\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"manufacturers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/autos/cars/Honda",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Integra\",\n\t\"numberOfCylinders\" : 4,\n\t\"manufacturerName\": \"Acura\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/cars/Honda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"cars",
+						"Honda"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/autos/trims/Honda/Accord",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"carName\": \"Model3\",\n\t\"manufacturerName\": \"Tesla\",\n\t\"trimName\": \"Model3-Trim1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/trims/Honda/Accord",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"trims",
+						"Honda",
+						"Accord"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/autos/manufacturer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Tesla\",\n\t\"countryOfOrigin\": \"USA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/manufacturer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"manufacturer"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/autos/car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Model3\",\n\t\"manufacturerName\": \"Tesla\",\n\t\"numberOfCylinders\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"car"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/autos/trim",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Model3\",\n\t\"manufacturerName\": \"Tesla\",\n\t\"trimName\": \"Model3-Trim1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/autos/trim",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"autos",
+						"trim"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
