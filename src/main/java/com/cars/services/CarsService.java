@@ -5,8 +5,8 @@ import com.cars.requests.ManufacturerAddRequest;
 import com.cars.responses.CarResponse;
 import com.cars.responses.ManufacturerResponse;
 import com.cars.respositories.ManufacturerRepository;
-import entities.Car;
-import entities.Manufacturer;
+import com.cars.entities.Car;
+import com.cars.entities.Manufacturer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

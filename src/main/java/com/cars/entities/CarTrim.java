@@ -1,10 +1,12 @@
-package entities;
+package com.cars.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 @Data
 @Builder
@@ -12,8 +14,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Entity
 @Table(name = "car")
-@ToString(exclude = {"name", "numberOfCylinders", "manufacturer"})
-public class Car implements Serializable {
+@EqualsAndHashCode(exclude = {"manufacturer", "trims"})
+@ToString(exclude = {"name", "numberOfCylinders", "manufacturer", "trims"})
+public class CarTrim implements Serializable {
 
     @Id
     @Column(name = "name")
@@ -25,5 +28,10 @@ public class Car implements Serializable {
     @JsonManagedReference
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "manufacturername", nullable = false)
-    private Manufacturer manufacturer;
+    private ManufacturerCarTrim manufacturer;
+
+    @JsonBackReference
+    @OneToMany(mappedBy = "car",
+            cascade = CascadeType.ALL)
+    private Set<Trim> trims;
 }

@@ -1,4 +1,4 @@
-package entities;
+package com.cars.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;

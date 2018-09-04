@@ -1,6 +1,6 @@
 package com.cars.respositories;
 
-import entities.Manufacturer;
+import com.cars.entities.Manufacturer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

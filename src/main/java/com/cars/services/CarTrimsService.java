@@ -5,9 +5,9 @@ import com.cars.responses.CarTrimResponse;
 import com.cars.responses.ManufacturerTrimsResponse;
 import com.cars.responses.TrimResponse;
 import com.cars.respositories.ManufacturerCarTrimsRepository;
-import entities.CarTrim;
-import entities.ManufacturerCarTrim;
-import entities.Trim;
+import com.cars.entities.CarTrim;
+import com.cars.entities.ManufacturerCarTrim;
+import com.cars.entities.Trim;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

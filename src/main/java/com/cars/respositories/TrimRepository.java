@@ -1,6 +1,6 @@
 package com.cars.respositories;
 
-import entities.Trim;
+import com.cars.entities.Trim;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

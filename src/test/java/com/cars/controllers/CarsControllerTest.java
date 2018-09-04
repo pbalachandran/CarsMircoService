@@ -6,7 +6,7 @@ import com.cars.requests.ManufacturerAddRequest;
 import com.cars.respositories.ManufacturerRepository;
 import com.cars.utils.TestUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import entities.Manufacturer;
+import com.cars.entities.Manufacturer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
